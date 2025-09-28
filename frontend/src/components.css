@@ -1,0 +1,80 @@
+.register-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Daha az boşluk */
+}
+
+.register-form h2 {
+  margin-bottom: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00126b;
+  text-align: center;
+}
+
+.register-form label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 4px; /* Label ve input arası az boşluk */
+  display: block;
+  text-align: left;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f9fafb;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  outline: none;
+}
+
+.register-form button {
+  margin-top: 8px;
+  padding: 12px 0;
+  background: #2563eb;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.register-form button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.register-form .error-message {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin-top: -6px;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.register-form input,
+.register-form select {
+  box-sizing: border-box; /* padding ve border width'e dahil edilir */
+}
